@@ -3,7 +3,7 @@
 	<div class="home">
 		<img alt="Vue logo" src="../assets/logo.png">
 	</div>
-	<h3>Articles</h3>
+	<h3 v-if="articles[0]">Articles</h3>
 	<div v-for="article in articles" v-bind:key="article.id">
 		<div class="article">
 			<p class="title">Title: {{article.title}}</p><br />
